@@ -1,0 +1,960 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<!-- 匯入reset.css -->
+	<link rel="stylesheet" href="reset.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+body{
+	font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei";
+}
+	
+/* overflow:當超出範圍時自動變成捲軸呈現方式 */	
+header{
+		width:100%;
+		overflow: auto;
+		padding: 0 20px;
+		line-height: 100px;
+		position: fixed;
+		top: 0;
+		left: 0;
+	    z-index:10;
+	    background-color: #1C2774;
+	
+}
+	
+h1{
+	float: left;
+	padding-left:250px;
+}
+		
+nav{
+	float: right;	
+	margin-right: 280px;
+	
+}
+
+/* inline-block:水平排列成同一行 */
+nav ul li{
+	display: inline-block;
+	margin-right: 30px;
+	line-height: 100px;	
+	font-size: 18px;
+	font-weight: bold;
+}
+/* display:block:以區塊方式呈現 */
+nav a{
+	color: #fff;
+	text-decoration: none;
+	display:block;
+}
+	
+nav a:hover, a:active {
+	text-decoration: none;
+	color: #ccc;	
+}
+	
+.banner{
+		background-image: url("images/banner01.png");
+		height:900px;
+		margin:0;
+	}
+	
+.abouttitle{
+		height: 80px;
+	    background-color: #242F7F;
+	    color: #FFFFFF;
+	    text-align: center;
+	    line-height: 80px;
+	    font-size: 18px;
+	    font-weight: bold;
+	}	
+	
+.outintro{
+		height:1096px;
+	    background-color: #001150;
+	
+	}
+	
+.intro{
+		overflow: auto;
+		margin: 0 auto;
+	    width: 960px;
+	    height:1096px;
+/*		border: 1px solid #DF6668;*/
+	    background-color: #001150;
+	    
+		
+	}
+.aboutt{
+		color:#FFF;
+		font-size: 24px;
+	    padding-top: 100px;
+	  
+	}
+	
+.aboutp{
+		
+		color:#FFF;
+	    font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+	  
+	}
+.one{
+		width:32%;
+		height: 300px;
+		float: left;
+		margin-right: 2%;
+		background: url("images/about-01.png");
+		background-size: cover;
+/*	    border: 1px solid #000;*/
+}
+	
+.two{   
+	    width:32%;
+		height: 300px;
+		float: left;
+		margin-right: 2%;
+		background: url("images/about-02.png");
+		background-size: cover;
+/*	    border: 1px solid #000;*/
+	}
+	
+.three{   
+	    display: block;
+	    width:32%;
+		height: 300px;
+		float: left;
+		margin-right:0;
+		background: url("images/about-03.png");
+		background-size: cover;
+/*	    border: 1px solid #000;*/
+	}
+.one p{
+	    margin-top:40%;
+	    line-height: 30px;
+		text-align: center;
+	    font-size: 22px;
+        font-weight: bold;
+	    color: #0b72ac;
+}
+	
+.two p{
+	    margin-top:40%;
+	    line-height: 30px;
+		text-align: center;	
+	    font-size: 22px;
+        font-weight: bold;
+		color: #bd4a2f;;
+}	
+	
+.three p{
+	    margin-top:40%;
+	    line-height: 30px;
+		text-align: center;	
+		font-size: 22px;
+        font-weight: bold;
+		color: #62288e;
+}	
+	
+
+.orangeline{
+		background-color: #ff9d3a;
+		height: 2px;
+		}	
+.orangein{
+		width: 400px;
+	    height: 20px;
+	    margin: 0 auto;
+	    text-align: center;
+		line-height: 2px;
+		color: #ff9d3a;
+		font-size: 20px;
+        font-weight: 500;
+		background-color: #001150;
+	}
+
+.timeone{
+	    width: 32%;
+		height: 200px;
+		margin-top:10px;
+		margin-right: 2%;
+	    float: left;
+		text-align: center;
+/*		border: 1px solid #73C452;*/
+		color: #ff9d3a;
+        font-size: 20px;
+        font-weight: bold;
+		
+	}
+.timetwo{
+	    width:32%;
+		height: 200px;
+		margin-top:10px;
+		margin-right: 2%;
+		float: left;
+/*		border: 1px solid #73C452;*/
+		text-align: center;
+		color: #ff9d3a;
+        font-size: 20px;
+        font-weight: bold;
+		
+}
+	
+.timethree{
+	    width:32%;
+		height: 200px;
+		float: left;
+/*		border: 1px solid #73C452;*/
+		text-align: center;
+		color: #ff9d3a;
+        font-size: 20px;
+        font-weight: bold;
+}
+	
+.timeone p{
+	
+	    font-size: 18px;
+    	line-height: 30px;
+    	font-weight: 300;
+		color: #fff;
+}
+	
+.timetwo p{
+		font-size: 18px;
+    	line-height: 30px;
+    	font-weight: 300;
+/*		border: 1px solid #73C452;*/
+		color: #fff;
+	
+}
+.timethree p{
+		font-size: 18px;
+    	line-height: 30px;
+    	font-weight: 300;
+		color: #fff;
+}
+
+.lecturers{
+		height: 80px;
+	    background-color: #242F7F;
+	    color: #FFFFFF;
+	    text-align: center;
+	    line-height: 80px;
+	    font-size: 18px;
+	    font-weight: bold;
+	}
+
+/*
+.intro li{
+		width:30%;
+		height: 300px;
+		float: left;
+		margin-right: 5%;
+		background: url("images/yellow-flower.jpg");
+		background-size: cover;
+		border: 1px solid #000;
+	}	
+*/
+	
+.outbrief{
+		height:1200px;
+	    background-color: #001150;
+	
+	}	
+.briefin{
+	    overflow: auto;
+		margin: 0 auto;
+	    width: 960px;
+	    height:1200px;
+/*		border: 1px solid #DF6668;*/
+	    background-color: #001150;
+		
+	}
+	
+.peopleone{
+	    width:32%;
+		height: 300px;
+		float: left;
+		margin-top: 50px;
+		text-align: center;
+		margin-right: 2%;
+		background: url("images/lecturer-01.png");
+		background-size: cover;
+	
+		
+	}
+.peopletwo{
+	    width:32%;
+		height: 300px;
+		float: left;
+		margin-top: 50px;
+		margin-right: 2%;
+		background: url("images/lecturer-02.png");
+		background-size: cover;
+		
+	}
+	
+.peoplethree{
+		width:32%;
+		height: 300px;
+		float: left;
+		margin-top: 50px;
+		margin-right: 0;
+		background: url("images/lecturer-03.png");
+		background-size: cover;
+	}
+	
+.name1{
+ 		width:32%;
+		height: 150px;
+		float: left;
+/*		border: 1px solid #73C452;*/
+		margin-top:30px;
+		margin-right: 2%;
+		line-height: 30px;
+		text-align: center;
+		color: #ff9d3a;
+        font-size: 22px;
+        font-weight: bold;
+}
+.name1 p{
+		color: #fff;
+		font-size: 20px;
+	}
+	
+.name2{
+ 		width:32%;
+		height: 150px;
+		float: left;
+/*		border: 1px solid #73C452;*/
+		margin-top:30px;
+		margin-right: 2%;
+		line-height: 30px;
+		text-align: center;
+		color: #ff9d3a;
+        font-size: 22px;
+        font-weight: bold;
+}
+
+.name2 p{
+		color: #fff;
+		font-size: 20px;
+	}
+	
+.name3{
+ 		width:32%;
+		height: 150px;
+		float: left;
+/*		border: 1px solid #73C452;*/
+		margin-top:30px;
+		margin-right: 0;
+		line-height: 30px;
+		text-align: center;
+		color: #ff9d3a;
+        font-size: 22px;
+        font-weight: bold;
+}
+
+.name3 p{
+		color: #fff;
+		font-size: 20px;
+	}
+	
+.whiteline1{
+		width:32%;
+		height: 572px;
+		float: left;
+		border: 1px solid #73C452;
+		margin-top:30px;
+	    padding-top: 30px;
+		padding-left: 45px;
+		margin-right: 2%;
+		line-height: 30px;
+		text-align: left;
+		color: #fff;
+        font-size: 18px;
+		border: 1px solid #fff;
+	}	
+.whiteline2{
+		width:32%;
+		height: 572px;
+		float: left;
+		border: 1px solid #73C452;
+		margin-top:30px;
+		padding-top: 30px;
+		padding-left: 45px;
+		margin-right: 2%;
+		line-height: 30px;
+		text-align: left;
+		color: #fff;
+        font-size: 18px;
+		border: 1px solid #fff;
+	}
+.whiteline3{
+		width:32%;
+		height: 572px;
+		float: left;
+		border: 1px solid #73C452;
+		margin-top:30px;
+		padding-top: 30px;
+		padding-left: 45px;
+		margin-right: 0;
+		line-height: 30px;
+		text-align: left;
+		color: #fff;
+        font-size: 18px;
+		border: 1px solid #fff;
+		
+	}
+
+	
+.outactivity{
+		height:2600px;
+	    background-color: #001150;
+	    padding-top: 100px;
+	}	
+	
+.gradual{
+	
+    background: url("images/bar-bg.png")top center;
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.gradual2{		
+	background: url("images/bar-bg.png")top center;
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+	}
+.orgtitle{
+	color: #ff9d3a;
+	font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+	text-align: center;
+}
+	
+table{
+		table-layout:fixed;
+		word-break: break-all;
+		width:70%;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;	
+		margin-bottom: 100px;
+}
+	
+th,td{
+		border-top:1px solid #fff;
+		border-bottom:1px solid #fff;
+		padding: 50px;
+}
+	
+
+col:first-child {
+/*	background: #FFFFFF*/
+}
+
+td div{
+		text-align: center;
+		color: #001150;
+		font-size: 18px;
+    	font-weight: bold;
+		line-height: 40px;
+		margin-left: -50px;
+		margin-top: -50px;
+		height:40px;
+		width: 150px;
+		background-color: #FFFFFF;
+	
+	}
+	
+.td1{
+		width: 20%;
+/*		background-color: #C1484A;*/
+		
+}
+.td2{
+		width: 80%;
+/*		background-color: #D7CB5C;*/
+		color: #fff;
+/*	margin-top:-15px;*/
+		line-height: 30px;
+    	font-size: 18px;
+	
+		padding-top:10px;
+/*	    font-weight: bold;*/
+}
+
+.td2 p{
+		font-size: 18px;
+		font-weight: 300;
+		font-weight: bolder;
+/*		padding-top: 20px;*/
+		color: #FFFFFF;
+	}
+
+.navitemsin{
+		list-style-type: none;
+		width:180px;
+		height: 80px;
+		display: inline-block;
+    	font-size: 19px;
+   		line-height: 80px;
+		margin-right:30px;
+		text-align: center;
+   		font-weight: 500;
+    	border-radius: 10px;
+		color: #fff;
+		background-color: #95589e;
+	}	
+	
+.navitem{
+		list-style-type: none;
+		width:180px;
+		height: 80px;
+		display: inline-block;
+    	font-size: 19px;
+   		line-height: 80px;
+		margin:60px ;
+		text-align: center;
+   		font-weight: 500;
+    	border-radius: 10px;
+		color: #fff;
+		background-color: #4f64b1;
+		
+	}
+.navout{
+		text-align: center;
+/*		border: 1px solid #9C2F31;*/
+		padding-top: 60px;
+		
+}
+.contain-md{
+	height: 607px;
+    margin: 0 auto;
+	line-height: 607px;
+	background-color: #001150;
+	text-align: center;	
+/*	background: url("images/exhibition.jpg");*/
+	
+}
+.contain-md2{
+		
+	height: 607px;
+    margin: 0 auto;
+	line-height: 607px;
+	background-color: #001150;
+	text-align: center;	
+/*	background: url("images/exhibition.jpg");*/
+	
+}
+	
+	
+.iframe{
+		width: 660px;
+		height: 430px;
+	    text-align: center;
+		margin:40px  au/to ;
+		margin-right:0;
+		float: left;
+/*		border: 1px solid #BC3235;*/
+	}
+	
+.iframe img{
+		height: 430px;
+		line-height: 430px;
+	}
+	
+.iframe2{
+		width: 660px;
+		height: 430px;
+/*		margin-top:80px;*/
+		float: left;
+/*		margin: 40px auto;*/
+		font-size: 20px;
+		padding-left: 60px;
+		padding-top: 15px;
+    	font-weight: 300;
+		color: #fff;
+/*		border: 1px solid #BC3235;*/
+	}
+	
+
+
+.iframeout{
+		margin:0 auto;
+		height:600px;
+	 	background-color: #001150;
+/*		border: 1px solid #CCC;*/
+	}
+	
+.text{
+		font-size: 18px;
+		color: #fff;
+	}
+.td2 span{
+		color: #FF9D3A;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+.td2 span2{
+		font-size: 18px;
+		
+	}
+	
+.td2 span3{
+/*display:block 變區塊元素*/
+		display: block;
+		height:40px;
+		width: 1195px;
+		background-color: #ccc;
+		text-align: center;
+		font-size: 20px;
+    	font-weight: bold;
+		line-height: 40px;
+		margin-top: -10px;
+		margin-left:-167px;
+		color: #001150;
+	}	
+.address{
+		height:100px;
+		margin-top:-250px;
+		border:1px solid #FFF;
+    	color: #fff;
+		font-size: 20px;
+	}
+.address span{
+		color: #ff9d3a;
+		font-weight: bold;
+		
+	}
+.trans{
+/*		display: block;*/
+/*		border: 1px rgba(103,207,95,1.00);*/
+		margin-left:-130px;
+		overflow: hidden;
+	    margin-top:50px;
+		color: #fff;
+		width: 594px;
+		height: 100px;
+		line-height: 100px;
+	}	
+.mrt{
+		color:#fff;	
+		font-size: 18px;
+		margin: 0 auto;
+		padding-left: 90px;
+		text-align: left;
+}
+	
+.footer{
+		height: 400px;
+		width:100%;
+		padding: 20px 0;
+		background-color: #2E3989;
+
+	}
+.footerinside{
+		height: 400px;
+		margin: 0 auto;
+		text-align: center;
+		width: 1800px;
+/*		border: 1px solid #fff;*/
+	}
+.footerinside span{
+		padding-right:15px;
+	}
+	
+.footerinside  li{
+		list-style-type: none;
+		display: inline-block;
+		margin:50px auto;
+		text-align: center;
+/*		border:1px solid #fff;*/
+		padding-left:140px;
+		color: #fff;
+    	font-size: 18px;
+    	font-weight: bold;
+	}
+.footerinside {
+		width:1200px;
+		height:150px;
+/*		border:1px solid #fff;*/
+		margin: 0 auto;
+		padding-right: -35px;
+	}
+.footer img{
+		vertical-align: middle;
+	}
+.contact{
+		width:680px;
+		margin:0 auto;
+		margin-top:20px;
+		text-align: left;
+		line-height: 30px;
+		color: #fff;
+/*		border: 1px solid #fff;*/
+		
+	}
+.bao{
+		width: 1320px;
+		margin: 0 auto;
+		display: flex;
+		padding-top:80px;
+/*		border:1px solid #fff;*/
+	}
+.iframe2 span{
+		font-weight: bold;
+    	color: #ff9d3a;
+		line-height: 50px;
+		font-size: 20px;
+	}
+.transportation{
+/*		text-align: center;*/
+		padding-top: 20px;
+		padding-left: -20px;
+		margin: auto;
+		font-size: 18px;
+		line-height: 50px;
+	}
+.transportation p{
+		line-height: 50px;
+/*		margin-right: 40px;	*/
+	
+		
+	}
+	
+.transtext{
+		margin-left: 40px;
+		line-height: 20px;
+		font-size: 18px;
+		color: #fff;
+	}
+</style>
+	
+</head>
+
+<body>
+<header>
+	<h1><img style="vertical-align:middle;" src="images/logo.png" width="80" height="55" alt="logo"/></h1>
+	
+	<nav>
+		<ul>
+			<li><a href="">About 2020 ITRI ICT TechDay</a></li>
+			<li><a href="">講者簡介</a></li>
+			<li><a href="">活動議程</a></li>
+			<li><a href="">展區特色</a></li>
+			<li><a href="">交通資訊</a></li>
+			<li><a href="">立即報名</a></li>
+			<li><a href="">歷屆回顧</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="banner">
+		
+</section>
+
+<div class="abouttitle">
+         About 2020 ITRI ICT TechDay
+</div>
+<div class="outintro">
+<section class="intro">
+<div class="aboutt">領航科技 實現未來 Realizing 5G Futures</div><br><br>
+<div class="aboutp">	
+
+超前部署，重新定義ICT產業新指標，共創下一代技術制高點！5G 正式開台，商用起步風起雲湧，在大環境的衝擊之下，<br>產業規則即將改寫。<br><br>
+
+2020 ITRI ICT TechDay 將透過重量級專家觀點分享，從「5G通訊/邊緣運算」、「 AI晶片」、「自駕車/車聯網」、「資訊<br>安全」等關鍵領域深入剖析，並展出最新產業應用，與您一同掌握 ICT 技術新趨勢，揭開未來產業的新面貌，實現 5G 大<br>未來。<br><br><br><br></div>
+	
+<div class="orangeline"><div class="orangein">關鍵布局　x　前瞻應用　x　技術剖析</div></div><br><br><br>
+	
+	<ul>
+	<li class="one"><p>ICT<br>趨勢論壇</p></li>
+	<li class="two"><p>ICT<br>專家觀點</p></li>
+	<li class="three"><p>ICT<br>展示體驗</p></li>
+	</ul>
+	
+	<ul>
+		<li class="timeone">09:00-12:00 <br><br><p>國際級ICT產業專家趨<br>勢演講，分享國際最新<br>動態，掌握產業關鍵。</p></li>
+		<li class="timetwo">13:00-17:00<br><br><p>聚焦五大關鍵領域，深<br>入探討ICT產業發展，<br>完整剖析最新技術。</p></li>
+		<li class="timethree">09:00-17:00<br><br><p>超過30項最新ICT應用<br>技術於現場完整展示，<br>與國際同步體驗最前瞻<br>的技術應用。</p></li>
+	</ul>
+</section>
+</div>
+<div class="lecturers">
+         講者簡介
+</div>
+<div class="outbrief">
+<div class="briefin">
+<ul>
+	<li class="peopleone"></li>
+	<li class="peopletwo"></li>
+	<li class="peoplethree"></li>
+</ul>
+		
+<ul>
+		<li class="name1">闕志克 Tzi-Cker Chiueh<p><br>/ 工研院資訊與通訊研究所 所長<br>Vice President ＆ General<br>Director, ICL, ITRI</p></li>
+		<li class="name2">井琪 Chee Ching<p><br>/遠傳電信 總經理<br>President, Far EasTone<br> Telecommunications</p></li>
+		<li class="name3">黃欽勇 Colley Hwang<p><br>/ DIGITIMES電子時報 社長Founder＆ President,<br>DIGITIMESI</p></li>
+</ul>
+	
+<div class="whiteline1">闕志克博士目前擔任工研院<br>資通所「資訊與通訊研究<br>所」所長，曾擔任「雲端運<br>算行動應用科技中心」主任<br>及紐約石溪大學電腦科學系<br>教授。闕博士曾任職賽門鐵<br>克( Symantec )美國總部核<br>心研究實驗室總監和美國國<br>防先進研究計畫署( DARPA )<br>策劃顧問，在系統軟體、網<br>路架構與資訊安全的創新應<br>用上研究成果豐碩，發表過<br>相關學術文章超過250篇，<br>並多次獲得國際性最佳論文<br>獎殊榮。</div>
+	
+<div class="whiteline2">井琪博士於2018年加入遠傳<br>電信，先擔任轉型辦公室首<br>席轉型長，並於2019年接任<br>遠傳電信總經理一職。自接<br>任以來，她致力於推動「精<br>實、轉型、再成長」的策<br>略，培養「5G大人物」人才<br>並帶領團隊目標超乎傳統電<br>信業者角色。加入遠傳電信<br>前，井琪博士擁有AT＆T網<br>路運營及資訊科技管理長達<br>23年的經驗，她專精網路運<br>營及規劃，工序工程以及系<br>統解決方案等領域。並於<br>2018年獲選”美國亞裔50傑<br>出企業家”的肯定。</div>
+	
+<div class="whiteline3">黃欽勇社長是位資歷超過35<br>年的產業分析師，著有<br>《Asian Edge》、《科技島<br>鏈》、《巧借東風》、《出<br>擊》、《西進與長征》、<br>《打造數位台灣》、《跨世<br>紀資訊商戰》、《電腦王國<br>ROC》等書，一路見證PC、<br>行動通信與物聯網時代的變<br>革。曾受邀到微軟、台積<br>電、鴻海、友達、聯電、宏<br>碁、聯想、三星、華為、京<br>東方、應用材料、新思科<br>技、Rohm、Epson等多家<br>國際企業總部講授產業趨<br>勢，為身經百戰的跨界創業<br>與產業專家。</div>
+				
+		
+		
+</div>		
+</div>
+<div class="abouttitle">活動議程</div>
+<div class="outactivity">
+<div class="gradual">ITRI ICT 趨勢論壇</div>	
+<p class="orgtitle">洞悉產業趨勢</p>
+
+<table  style="word-break:break-all" >
+	  <col><col>
+	  <tbody>
+	    <tr>
+	      <td class="td1"><div>09:00 - 09:30</div></td>
+	      <td class="td2"><span>Registration</span><br><p>報到進場</p></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>09:30 - 09:40</div></td>
+	      <td class="td2"><span>Opening Remarks</span><p>開場致詞</p></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>09:40 - 10:20</div></td>
+	      <td td class="td2"><span>ICT產業趨勢與ICL重點技術　Scope of ICT Technology</span><br><p>闕志克 / 工業技術研究院資訊與通訊研究所 所長<br>
+Tzi-Cker Chiueh / Vice President ＆ General Director, ICL, ITRI</p></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>10:20 - 11:00</div></td>
+	      <td td class="td2"><span>5G應用新紀元，提昇智慧新物聯　Enhance Smart IoT in the new 5G era</span><br><p>
+井琪 / 遠傳電信 總經理<br>Chee Ching / President, Far EasTone Telecommunications</p></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>11:00 - 11:40</div></td>
+	      <td td class="td2"><span>斷鏈之後，科技產業鏈的未來　Disconnected ICT Supply Chains : New Power Plays Unfolding</span><br><p>黃欽勇 / DIGITIMES電子時報 社長<br>Colley Hwang / Founder ＆ President, DIGITIMES</p></td>
+        </tr>
+      </tbody>
+</table>
+	
+<div class="gradual2">ICT專家觀點</div>	
+<p class="orgtitle">剖析專業技術</p>
+	
+<div class="navout">
+<li class="navitemsin">5G通訊 /邊緣運算</li>
+<li class="navitem">AI晶片</li>
+<li class="navitem">自駕車 /車聯網</li>
+<li class="navitem">資訊安全</li>
+</div>
+<table  style="word-break:break-all" >
+	  <col><col>
+	  <tbody>
+	    <tr>
+	      <td class="td1"><div>14:00 - 14:20</div></td>
+	      <td class="td2"><span>【企業專題】</span><br><p>5G企業專網應用與白牌化商機</p>
+<span>/&nbsp;</span><span2>遠傳 曾詩淵 執行副總</span2></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>14:20 - 14:40</div></td>
+	      <td class="td2"><p>ITRI 5G O-RAN-based Base Station Solution</p>
+<span>/ </span><span2>許仁源 組長</span2></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>14:40 - 15:00</div></td>
+	      <td td class="td2"><p>5G 毫米波小基站前端相控晶片</p>
+<span>/ </span><span2>郭芳銚 技術副理</span2></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>15:00 - 15:40</div></td>
+	      <td td class="td2"><span3>Networking Time - Demo 區參觀</span3></td>
+        </tr>
+	    <tr>
+	      <td class="td1"><div>15:40 - 16:00</div></td>
+	      <td td class="td2"><p>5G小基站射頻收發晶片</p>
+<span>/ </span><span2>陳正中 資深技術經理</span2></td>
+        </tr>
+		<tr>
+	      <td class="td1"><div>16:00 - 16:20</div></td>
+	      <td td class="td2"><p>iMEC 企業專網平台與應用</p>
+<span>/ </span><span2>文國煒 副經理</span2></td>
+        </tr>
+		<tr>
+	      <td class="td1"><div>16:20 - 16:40</div></td>
+	      <td td class="td2"><p>5G NFVI平台與效能最佳化
+<br><span>/</span> 李育緯 技術經理</p></td>
+        </tr>
+		<tr>
+	      <td class="td1"><div>16:40 - 17:00</div></td>
+	      <td td class="td2"><span3>會後交流時間 - Demo 區參觀</span3></td>
+        </tr>
+      </tbody>
+</table>
+</div>
+<div class="abouttitle">展區特色</div>
+<div class="contain-md"><img style="vertical-align:middle;" src="images/exhibition.jpg" width="1160" height="467" alt="logo"/></div>
+<div class="abouttitle">交通資訊</div>
+<div class="iframeout"> <div class="bao"><div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0206801569843!2d121.55839751537883!3d25.0333722444698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb61ab3d33f%3A0xab0d0f7ac395bff4!2z5Y-w5YyX5ZyL6Zqb5pyD6K2w5Lit5b-DKFRJQ0Mp!5e0!3m2!1szh-TW!2stw!4v1610893938752!5m2!1szh-TW!2stw" width="660" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+	
+<div class="iframe2">
+<span>TICC台北國際會議中心</span>/ 台北市信義路五段1號
+<ul>
+<li>
+<p class="transportation"><img style="vertical-align: middle" src="images/mrt.png" width="36" height="36" alt=""/>&nbsp;捷運</p>
+<p class="transtext">可搭至淡水信義線《台北101/世貿站》1號出口，沿信義路五段步行<br>約一分鐘。</p>
+</li>
+<li>
+<p class="transportation"><img style="vertical-align: middle" src="images/bus.png" width="36" height="36" alt=""/>&nbsp;公車</p>
+<p class="transtext">可搭20、37 、 284 、 284直、 611 、 650 、 935 、 1032 、 1503 、 1551 、 1552 、 2025 、 9001 、 9009 、南軟通勤雙和線，至《世貿中心（基隆路）》站下車。</p>
+</li>
+<li>
+<p class="transportation"><img style="vertical-align: middle" src="images/car.png" width="36" height="36" alt=""/>&nbsp;停車</p>
+<p class="transtext">可利用國際會議中心地下停車場及附近停車位。</p>
+</li>
+</ul>
+	
+</div>
+
+</div></div>
+
+
+<div class="footer">
+	<div class="footerinside">
+	<ul>
+	<li><span>主辦單位</span><img style="vertical-align: middle" src="images/itri.png" width="216" height="50" alt=""/></li>
+	<li><span>執行單位</span><img style="vertical-align: middle" src="images/business_next.png" width="135" height="60" alt=""/></li>
+	<li><span>共同發聲</span><img style="vertical-align: middle" src="images/digitimes.png" width="150" height="50" alt=""/></li>
+	</ul>
+	<br>
+	<br>
+  </div>	
+	<p class="contact"> ＊活動洽詢專線：(02)8773-9808 分機233 劉小姐、分機239 楊小姐<br>
+      ＊本活動報名網頁不支援ie瀏覽器，請使用chrome或edge開啟報名頁面<br>
+      ＊因應政府防疫政策，會場座位有限，活動將採取審核制，審核通過者將於活動前以email通知<br>
+      ＊請所有與會者全程配戴口罩，並配合防疫相關措施<br>
+      ＊報到前請配合量額溫、酒精消毒後方可入場(若超過37.5度，將婉拒入場)<br>
+      ＊主辦單位保有議程異動之權利，此為免費活動恕不提供午餐</p>
+</div>
+</body>
+</html>
+
